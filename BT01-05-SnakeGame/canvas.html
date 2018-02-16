@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTML5 Canvas</title>
+		<style>
+			canvas{
+				border:1px solid black;
+				background-color:lightgrey;
+			}
+		</style>
+		<script>
+			var c;									// canvas element
+			var ctx;								// object to draw on
+			
+			// initialization after body is loaded
+			// then call draw function
+			function init(){
+				c = document.getElementById('myCanvas');
+				ctx = c.getContext('2d');
+				draw();
+			}
+			
+			function draw(){
+				// draw red square with black border
+				ctx.fillStyle="red";
+				ctx.fillRect(30,30,50,50);
+				ctx.strokeStyle="black"
+				ctx.lineWidth="3";
+				ctx.strokeRect(30,30,50,50);
+				
+				// draw black square
+				ctx.fillStyle="black";
+				ctx.fillRect(40,40,50,50);
+				
+				// draw text
+				ctx.font = '30pt Arial';
+				
+				// create gradient
+				var gradient = ctx.createLinearGradient(0,0,c.width,0);
+				gradient.addColorStop("0","red");
+				gradient.addColorStop("1","black");
+				
+				// fill text with gradient
+				ctx.fillStyle=gradient;
+				ctx.fillText("SaharaDB",100,80);
+				
+				// define line
+				ctx.strokeStyle = "black";
+				ctx.fillStyle = "red";
+				ctx.lineWidth = 2;
+				
+				ctx.beginPath();
+				ctx.moveTo(100,90);
+				ctx.lineTo(280,90);
+				ctx.stroke();
+				ctx.closePath();
+			}
+		</script>
+	</head>
+	<body onload="init()">
+		<canvas id="myCanvas" width="320" height="150">
+			<p>Sorry, your browser doesn't use the canvas feature</p>
+		</canvas>
+	</body>
+</html>

@@ -1,0 +1,60 @@
+body {
+	font-family: arial;
+	font-size: 1.2em;
+	line-height: 1.7em;
+	background: -o-linear-gradient(left,rgba(255,0,0,0),rgba(255,0,0,0.6));
+	background: -moz-linear-gradient(left,rgba(255,0,0,0),rgba(255,0,0,0.6));
+	background: -webkit-linear-gradient(left,rgba(255,0,0,0),rgba(255,0,0,0.6));
+	background: linear-gradient(left,rgba(255,0,0,0),rgba(255,0,0,0.6));
+}
+
+li {
+	list-style: none;
+}
+
+.container {
+	width: 70%;
+	margin: 20px auto;
+	overflow: auto;
+}
+
+.pull-left {
+	float: left;
+}
+
+.pull-right {
+	float: right;
+}
+
+header {
+	background: #1f88f4;
+	color: white;
+	padding: 5px 10px;
+	overflow: auto;
+	font-size: 1.4em;
+	font-weight: bold;
+}
+
+footer {										/* same as header except uses default font-size */
+	background: #1f88f4;
+	color: white;
+	padding: 5px 10px;
+	overflow: auto;
+}
+
+@media only screen and (max-width: 900px) {
+	.container {
+		width: 90%;	
+	}
+	
+	body {
+		font-size: 1em;	
+	}
+	
+	header {
+		font-size: 1.2em;	
+	}
+}
+
+
+

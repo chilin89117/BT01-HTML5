@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Henry VIII Quiz</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/style.css" type="text/css">
+	</head>
+	
+	<body>
+		<div class="container">
+			<header>
+				<div class="pull-left">Henry VIII Quiz</div>
+				<div class="pull-right">&copy; 2015 Chi Lin</div>
+			</header>
+			
+			<main>
+				<form class="questionForm" id="q1" data-question="1">
+					<h3>1. Who was the 4th wife of Henry VIII?</h3>
+					<ul>
+						<li><input type="radio" name="q1" value="a" /> Catherine Howard</li>
+						<li><input type="radio" name="q1" value="b" /> Jane Seymour</li>
+						<li><input type="radio" name="q1" value="c" /> Anne of Cleves</li>
+						<li><input type="radio" name="q1" value="d" /> Katherine Parr</li>
+					</ul>
+					<button id="submit">Submit</button>
+				</form>
+				
+				<form class="questionForm" id="q2" data-question="2">
+					<h3>2. Who was the only legitimate son of Henry VIII?</h3>
+					<ul>
+						<li><input type="radio" name="q2" value="a" /> Henry IX</li>
+						<li><input type="radio" name="q2" value="b" /> Edward VI</li>
+						<li><input type="radio" name="q2" value="c" /> James I</li>
+						<li><input type="radio" name="q2" value="d" /> He had a son?</li>
+					</ul>
+					<button id="submit">Submit</button>
+				</form>
+				
+				<form class="questionForm" id="q3" data-question="3">
+					<h3>3. Which of Henry VIII's wives outlived him?</h3>
+					<ul>
+						<li><input name="q3" type="radio" value="a" /> Katherine Parr</li>
+						<li><input name="q3" type="radio" value="b" /> Katherine of Aragon</li>
+						<li><input name="q3" type="radio" value="c" /> Jane Seymour</li>
+						<li><input name="q3" type="radio" value="d" /> Catherine Howard</li>
+					</ul>
+					<button id="submit">Submit</button>
+				</form>
+				
+				<form class="questionForm" id="q4" data-question="4">
+					<h3>4. Which wife did Henry VIII love the most?</h3>
+					<ul>
+						<li><input name="q4" type="radio" value="a" /> Anne Boleyn</li>
+						<li><input name="q4" type="radio" value="b" /> Katherine of Aragon</li>
+						<li><input name="q4" type="radio" value="c" /> Jane Seymour</li>
+						<li><input name="q4" type="radio" value="d" /> Anne of Cleves</li>
+					</ul>
+					<button id="submit">Submit</button>
+				</form>
+				
+				<form class="questionForm" id="q5" data-question="5">
+					<h3>5. Who was Henry VIII's older brother?</h3>
+					<ul>
+						<li><input name="q5" type="radio" value="a" /> Richard III</li>
+						<li><input name="q5" type="radio" value="b" /> Edmund Tudor, Duke of Somerset</li>
+						<li><input name="q5" type="radio" value="c" /> Henry VII</li>
+						<li><input name="q5" type="radio" value="d" /> Arthur Tudor, Prince of Wales</li>
+					</ul>
+					<button id="submit">Submit</button>
+				</form>
+				
+				<div id="results"></div>
+				<br />
+			</main>
+			
+			<footer>
+				<div class="pull-left">Total: 5 Questions</div>
+			</footer>
+		</div><!-- container -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="js/quiz.js"></script>
+	</body>
+</html>

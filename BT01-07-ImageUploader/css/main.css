@@ -1,0 +1,111 @@
+* {
+	padding:0;
+	margin:0;
+}
+
+body {
+	font-family:arial;
+}
+
+header {
+	height:50px;
+	background:#333;
+	color:#fff;
+}
+
+header h1 {
+	padding:5px 0 5px 10px;
+	float: left;
+	width: 86%;
+}
+
+header h4 {
+	padding: 16px 0 0 0;
+	float: right;
+	width: 12%;
+}
+
+.clearfix {
+	clear: both;
+}
+
+#picbox {
+	width:650px;
+	margin:50px auto;
+	border:12px inset #ccc;
+	min-height:600px;
+	overflow:auto;
+	background: azure;
+}
+
+#picbox .back {
+	text-align:center;
+	padding-top:100px;
+	display:block;
+	opacity:0.4;
+}
+
+#picbox .preview {
+	width:245px;
+	height:215px;
+	float:left;
+	margin:55px 0 0 60px;
+	position:relative;
+	text-align:center;
+}
+
+#picbox .preview img {
+	max-width:240px;
+	max-height: 180px;
+	margin: 0;
+	border:5px inset #ccc;
+	display:block;
+	box-shadow: 5px 5px 5px #666;
+}
+
+#picbox .imageHolder {
+	display:inline-block;
+	position:relative;
+}
+
+#picbox .uploaded {
+	position:absolute;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+	background:url(../images/check.png) no-repeat center center rgba(255,255,255,0.4);
+	display:none;
+}
+
+#picbox .preview.done .uploaded {
+	display:block;
+}
+
+#picbox .progressHolder {
+	position:absolute;
+	background:#252f38;
+	height:12px;
+	width:100%;
+	left:0;
+	bottom:0;
+	box-shadow: 3px 3px 5px #666;
+}
+
+#picbox .progressBar {
+	background:#2586d0;
+	position:absolute;
+	height:100%;
+	left:0;
+	width:0;
+	box-shadow: 0 0 2px rgba(255, 255, 255, 0.4) inset;
+	
+	-moz-transition:0.25s;
+	-webkit-transition:0.25s;
+	-o-transition:0.25s;
+	transition:0.25s;
+}
+
+#picbox .preview.done .progressBar {
+	width:100% !important;
+}

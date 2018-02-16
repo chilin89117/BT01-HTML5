@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTML5 Canvas</title>
+		<style>
+			canvas{
+				border:1px solid black;
+			}
+		</style>
+		<script>
+			var c;									//canvas element
+			var ctx;								//object to draw on
+			
+			// initialization after body is loaded
+			// then call draw function
+			function init(){
+				c = document.getElementById("myCanvas");
+				ctx = c.getContext("2d");
+				draw();
+			}
+			
+			function draw(){
+				var posX = 0;
+				var posY = 0;
+				
+				// draw circles at every 20ms intervals to show motion
+				setInterval(function(){
+					posX += 1;
+					posY += 1;
+					
+					//ctx.clearRect(0,0,c.width,c.height);
+					
+					// fill canvas object with black background
+					ctx.fillStyle="black";
+					ctx.fillRect(0,0,c.width,c.height);
+					
+					// draw white, red and blue circles
+					ctx.fillStyle="white";
+					ctx.beginPath();
+					ctx.arc(posX+posX*1.5,20+posY/2,55,0,Math.PI * 2);
+				  ctx.fill();
+					
+					ctx.fillStyle="red";
+					ctx.beginPath();
+					ctx.arc(500-posX,400-posY*1.5,78,0,Math.PI * 2);
+				  ctx.fill();
+					
+					ctx.fillStyle="blue";
+					ctx.beginPath();
+					ctx.arc(350-posX,posY,38,0,Math.PI * 2);
+				  ctx.fill();
+				},20);
+			}
+		</script>
+	</head>
+	
+	<body onload="init()">
+		<canvas id="myCanvas" width="600" height="400">
+			<p>Sorry, this browser does not support canvas</p>
+		</canvas>
+	</body>
+</html>

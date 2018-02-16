@@ -1,0 +1,86 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>Mobiletodo</title>
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/humanity/jquery-ui.css">
+		<link rel="stylesheet" href="css/style.css" />
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+		<script src="js/main.js"></script>
+	</head>
+	
+	<body> 
+		<!-- Home Page -->
+		<div data-role="page" id="home">
+			<header data-role="header">
+				<h1>Mobile Todo</h1>
+			</header>
+			
+			<main class="ui-content">
+				<p><a href="#add" class="ui-btn ui-corner-all ui-icon-plus
+					ui-btn-icon-bottom" data-transition="flip">Add A Todo</a></p>
+				<p><a href="index.html" data-ajax="false" id="clear_btn" 
+					class="ui-btn ui-corner-all ui-icon-delete	ui-btn-icon-bottom
+					ui-btn-b">Clear All Todos</a></p>
+				<ul id="todos" data-role="listview" data-filter="true" 
+					data-filter-placeholder="Search Todos..." data-inset="true">
+				</ul>
+			</main>
+			
+			<footer data-role="footer">
+				<h4>Mobile Todo &copy; 2015 Chi Lin</h4>
+			</footer>
+		</div>
+		
+		<!-- Add Page -->
+		<div data-role="page" id="add">
+			<header data-role="header">
+				<a href="index.html" data-icon="delete" data-transition="flip">Cancel</a>
+				<h1>Add a Todo</h1>
+				<a href="index.html" id="addSave-btn" data-ajax="true" data-icon="check" 
+					data-theme="b" data-transition="flip">Save</a>
+			</header>
+			
+			<main class="ui-content">
+				<form id="add_form">
+					<input type="text" name="todo_name" id="todo_name_add" 
+						placeholder="Enter a name..." autofocus="true">
+					<input type="text" name="todo_date" id="todo_date_add"
+						placeholder="Select a date...">
+				</form>
+			</main>
+			
+			<footer data-role="footer">
+				<h4>Mobile Todo &copy; 2015 Chi Lin</h4>
+			</footer>
+		</div>
+		
+		<!-- Edit Page -->
+		<div data-role="page" id="edit">
+			<header data-role="header">
+				<a href="index.html" data-icon="delete" data-transition="flip">Cancel</a>
+				<h1>Edit a Todo</h1>
+				<a href="index.html" id="editSave-btn" data-ajax="true" data-icon="check"
+					data-theme="b" data-transition="flip">Save</a>
+			</header>
+			
+			<main class="ui-content">
+				<form id="edit_form">
+					<input type="text" name="todo_name" id="todo_name_edit" autofocus="true">
+					<input type="text" name="todo_date" id="todo_date_edit">
+					<a href="#" id="delete" class="ui-btn ui-corner-all ui-icon-delete	
+						ui-btn-icon-bottom">Delete</a>
+				</form>
+			</main>
+			
+			<footer data-role="footer">
+				<h4>Mobile Todo &copy; 2015 Chi Lin</h4>
+			</footer>
+		</div>
+	</body>
+</html>

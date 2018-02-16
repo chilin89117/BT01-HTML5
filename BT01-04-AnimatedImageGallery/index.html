@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <title>U11-02-AnimatedImageGallery</title>    
+		
+		<link rel="stylesheet" href="css/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+		<link rel="stylesheet" href="css/fancybox/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+		<link rel="stylesheet" href="css/fancybox/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+
+		<link rel="stylesheet" href="css/styles.css" type="text/css" />
+  </head>
+  
+  <body>
+  		<div class="container">
+			<header>
+				<!-- create empty navbar; categories are created in script.js using
+						 data-tags attribute in each li element -->
+				<nav id="navbar"></nav>
+			</header>
+		
+			<section id="main">
+				<!-- load all images in this ul and use data-tags attribute 
+						 for category or categories in comma-separated values -->
+				<!-- rel tag is for Fancybox to group into a gallery -->
+				<ul id="gallery">
+					<li data-tags="Logo Design, Print Design">
+						<a class="fancybox" rel="group" href="img/big01.jpg" title="I">
+							<img src="img/1.jpg" />
+						</a>
+					</li>
+					<li data-tags="Web Design, Logo Design">
+						<a class="fancybox" rel="group" href="img/big02.jpg" title="II">						
+							<img src="img/2.jpg" />
+						</a>
+					</li>
+					<li data-tags="Print Design">
+						<a class="fancybox" rel="group" href="img/big03.jpg" title="III">					
+							<img src="img/3.jpg" />
+						</a>		
+					</li>
+					<li data-tags="Print Design, Web Design">
+						<a class="fancybox" rel="group" href="img/big04.jpg" title="IV">					
+							<img src="img/4.jpg" />
+						</a>
+					</li>
+					<li data-tags="Logo Design">
+						<a class="fancybox" rel="group" href="img/big05.jpg" title="V">					
+							<img src="img/5.jpg" />
+						</a>
+					</li>
+					<li data-tags="Logo Design, Print Design, Web Design">
+						<a class="fancybox" rel="group" href="img/big06.jpg" title="VI">					
+							<img src="img/6.jpg" />
+						</a>
+					</li>
+					<li data-tags="Logo Design, Web Design">
+						<a class="fancybox" rel="group" href="img/big07.jpg" title="VII">
+							<img src="img/7.jpg" />
+						</a>					
+					</li>
+					<li data-tags="Print Design">
+						<a class="fancybox" rel="group" href="img/big08.jpg" title="VIII">					
+							<img src="img/8.jpg" />
+						</a>
+					</li>
+					<li data-tags="Web Design, Print Design">
+						<a class="fancybox" rel="group" href="img/big09.jpg" title="IX">					
+							<img src="img/9.jpg" />
+						</a>
+					</li>
+					<li data-tags="Logo Design, Print Design">
+						<a class="fancybox" rel="group" href="img/big10.jpg" title="X">					
+							<img src="img/10.jpg" />
+						</a>			
+					</li>
+					<li data-tags="Print Design">
+						<a class="fancybox" rel="group" href="img/big11.jpg" title="XI">	
+							<img src="img/11.jpg" />
+						</a>					
+					</li>
+					<li data-tags="Logo Design, Print Design">
+						<a class="fancybox" rel="group" href="img/big12.jpg" title="XII">					
+							<img src="img/12.jpg" />
+						</a>					
+					</li>
+					<li data-tags="Web Design, Logo Design">
+						<a class="fancybox" rel="group" href="img/big13.jpg" title="XIII">					
+							<img src="img/13.jpg" />
+						</a>					
+					</li>
+					<li data-tags="Logo Design, Print Design">
+						<a class="fancybox" rel="group" href="img/big14.jpg" title="XIV">
+							<img src="img/14.jpg" />
+						</a>					
+					</li>
+					<li data-tags="Print Design">
+						<a class="fancybox" rel="group" href="img/big15.jpg" title="XV">
+							<img src="img/15.jpg" />
+						</a>					
+					</li>
+					<li data-tags="Logo Design, Print Design">
+						<a class="fancybox" rel="group" href="img/big16.jpg" title="XVI">					
+							<img src="img/16.jpg" />
+						</a>
+					</li>
+					<li data-tags="Web Design, Print Design">
+						<a class="fancybox" rel="group" href="img/big17.jpg" title="XVII">
+							<img src="img/17.jpg" />
+						</a>					
+					</li>
+					<li data-tags="Logo Design">
+						<a class="fancybox" rel="group" href="img/big18.jpg" title="XVIII">
+							<img src="img/18.jpg" />
+						</a>	
+					</li>
+					<li data-tags="Web Design">
+						<a class="fancybox" rel="group" href="img/big19.jpg" title="XIX">					
+							<img src="img/19.jpg" />
+						</a>
+					</li>
+					<li data-tags="Logo Design, Print Design">
+						<a class="fancybox" rel="group" href="img/big20.jpg" title="XX">
+							<img src="img/20.jpg" />
+						</a>
+					</li>
+					<li data-tags="Logo Design, Print Design">
+						<a class="fancybox" rel="group" href="img/big21.jpg" title="XXI">
+							<img src="img/21.jpg" />
+						</a>
+					</li>
+					<li data-tags="Logo Design">
+						<a class="fancybox" rel="group" href="img/big22.jpg" title="XXII">
+							<img src="img/22.jpg" />
+						</a>
+					</li>
+					<li data-tags="Print Design">
+						<a class="fancybox" rel="group" href="img/big23.jpg" title="XXIII">
+							<img src="img/23.jpg" />
+						</a>
+					</li>				
+				</ul>
+			</section>
+			
+			<hr />
+			
+			<footer>
+				<p>HTML5 - Quicksand 1.4 - Fancybox 2.1.5 Photo Gallery &copy; 2016 Chi Lin</p>
+			</footer>
+		</div> <!-- /container -->
+
+		<!-- Quicksand plugin at http://razorjack.net/quicksand/ -->		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		<script src="js/jquery.quicksand.js"></script>
+		
+		<!-- use a lightbox plugin at http://fancybox.net -->
+		<script src="js/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+		<script src="js/fancybox/jquery.fancybox-buttons.js"></script>
+		<script src="js/fancybox/jquery.fancybox-media.js?v=1.0.6"></script>
+		<script src="js/fancybox/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+		
+		<!-- main jQuery file -->
+		<script src="js/script.js"></script>
+		
+		<!-- initialize fancybox (not used here because it is used as
+					a callback function for Quicksand in script.js)
+		<script>
+			$(document).ready(function () {
+				$(".fancybox").fancybox();
+			})	;
+		</script> -->
+
+  </body>
+</html>

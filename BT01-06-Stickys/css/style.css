@@ -1,0 +1,70 @@
+body {
+	font-family: 'Lucida Grande', 'Helvetica', sans-serif;
+	background-image: url(../images/corkboard.jpg);
+}
+
+#newNoteButton {
+	font-size: 25px;
+	padding: 10px;
+	color: white;
+	background: #777;
+	border-top: 0;
+	border-right: 1px solid #777;
+	border-bottom: 1px solid #777;
+	border-left: 0;
+	border-radius: 10px;
+}
+
+#newNoteButton:hover {
+	background: black;
+	border-color: black;
+	cursor: pointer;
+}
+
+#newNoteButton:active {
+	border-top: 1px solid black;
+	border-right: 0;
+	border-bottom: 0;
+	border-left: 1px solid black;
+}
+
+.note{
+	background-color: rgb(255, 240, 70);
+	height: 250px;
+	width: 200px;
+	padding: 10px;
+	position: absolute;
+	box-shadow: 7px 7px 10px rgba(0,0,0,0.6);
+}
+
+.note:hover .closebutton{
+	display: block;
+}
+
+.closebutton{
+	display: none;
+	background-image: url(../images/remove.png);
+	height: 30px;
+	width: 30px;
+	position: absolute;
+	left: -15px;
+	top: -15px;
+}
+
+.closebutton:active{
+	background-image: url(../images/remove_pushed.png);
+}
+
+.timestamp{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	font-size: 12px;
+	background-color: #db0;
+	color: black;
+	border-top: 1px solid #a80;
+	padding: 2px 4px;
+	text-align: center;
+	
+}
