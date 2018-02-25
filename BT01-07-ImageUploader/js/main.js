@@ -56,9 +56,9 @@ $(function(){
 			$.data(file).addClass('done');
 			
 			/* this statement is not necessary because, when 'done' class
-				 is added, css will display .uploaded (see main.css)
+				 is added, css will display .uploaded (see main.css) */
 			$('.uploaded').show();
-			*/
+			
 		}
 	});
 	
